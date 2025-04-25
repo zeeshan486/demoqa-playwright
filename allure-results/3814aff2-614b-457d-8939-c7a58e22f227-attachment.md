@@ -1,0 +1,1246 @@
+# Test info
+
+- Name: Shadow DOM interaction test >> Should interact with shadow DOM button
+- Location: D:\Appening\Playwright_Projects\demoqa-playwright\tests\shadowDom.spec.ts:5:7
+
+# Error details
+
+```
+Error: locator.textContent: Error: strict mode violation: locator('sl-button') resolved to 61 elements:
+    1) <sl-button caret="" size="small" data-valid="" slot="trigger" variant="text" data-optional="" title="Press \ to toggle">…</sl-button> aka locator('#theme-selector sl-button')
+    2) <sl-button size="small" data-valid="" target="_blank" data-optional="" variant="default" class="repo-button repo-button--github" href="https://github.com/shoelace-style/shoelace">…</sl-button> aka getByText('Code', { exact: true })
+    3) <sl-button size="small" data-valid="" target="_blank" data-optional="" variant="default" class="repo-button repo-button--star" href="https://github.com/shoelace-style/shoelace/stargazers">…</sl-button> aka getByText('Star', { exact: true })
+    4) <sl-button size="small" data-valid="" target="_blank" data-optional="" variant="default" class="repo-button repo-button--twitter" href="https://twitter.com/shoelace_style">…</sl-button> aka getByText('Follow', { exact: true })
+    5) <sl-button size="medium" data-valid="" data-optional="" variant="default">Button</sl-button> aka getByText('Button', { exact: true }).nth(3)
+    6) <sl-button size="medium" data-valid="" data-optional="" variant="default">Default</sl-button> aka locator('sl-button').filter({ hasText: 'Default' }).first()
+    7) <sl-button size="medium" data-valid="" data-optional="" variant="primary">Primary</sl-button> aka locator('sl-button').filter({ hasText: 'Primary' }).first()
+    8) <sl-button size="medium" data-valid="" data-optional="" variant="success">Success</sl-button> aka locator('sl-button').filter({ hasText: 'Success' }).first()
+    9) <sl-button size="medium" data-valid="" data-optional="" variant="neutral">Neutral</sl-button> aka locator('sl-button').filter({ hasText: 'Neutral' }).first()
+    10) <sl-button size="medium" data-valid="" data-optional="" variant="warning">Warning</sl-button> aka locator('sl-button').filter({ hasText: 'Warning' }).first()
+    ...
+
+Call log:
+  - waiting for locator('sl-button')
+
+    at ShadowDomPage.getShadowButtonText (D:\Appening\Playwright_Projects\demoqa-playwright\pages\ShadowDomPage.ts:20:26)
+    at D:\Appening\Playwright_Projects\demoqa-playwright\tests\shadowDom.spec.ts:9:41
+```
+
+# Page snapshot
+
+```yaml
+- link "Skip to main content":
+  - /url: "#main-content"
+- link "View Shoelace on GitHub":
+  - /url: https://github.com/shoelace-style/shoelace
+- link "Follow Shoelace on Twitter":
+  - /url: https://twitter.com/shoelace_style
+- button "Press \\ to toggle"
+- link "Get ready for more awesome! Web Awesome, the next iteration of Shoelace, is on Kickstarter. Read Our Story":
+  - /url: https://www.kickstarter.com/projects/fontawesome/web-awesome?ref=71ihfk
+  - img
+  - strong: Get ready for more awesome!
+  - text: Web Awesome, the next iteration of Shoelace, is on Kickstarter. Read Our Story
+- complementary:
+  - link "Shoelace":
+    - /url: /
+    - img "Shoelace"
+  - text: 2.20.1
+  - link "Code":
+    - /url: https://github.com/shoelace-style/shoelace
+  - link "Star":
+    - /url: https://github.com/shoelace-style/shoelace/stargazers
+  - link "Follow":
+    - /url: https://twitter.com/shoelace_style
+  - button "Search"
+  - navigation:
+    - list:
+      - listitem:
+        - heading "Getting Started" [level=2]
+        - list:
+          - listitem:
+            - link "Home":
+              - /url: /
+          - listitem:
+            - link "Installation":
+              - /url: /getting-started/installation
+          - listitem:
+            - link "Usage":
+              - /url: /getting-started/usage
+          - listitem:
+            - link "Themes":
+              - /url: /getting-started/themes
+          - listitem:
+            - link "Customizing":
+              - /url: /getting-started/customizing
+          - listitem:
+            - link "Form Controls":
+              - /url: /getting-started/form-controls
+          - listitem:
+            - link "Localization":
+              - /url: /getting-started/localization
+      - listitem:
+        - heading "Frameworks" [level=2]
+        - list:
+          - listitem:
+            - link "React":
+              - /url: /frameworks/react
+          - listitem:
+            - link "Vue":
+              - /url: /frameworks/vue
+          - listitem:
+            - link "Angular":
+              - /url: /frameworks/angular
+          - listitem:
+            - link "Svelte":
+              - /url: /frameworks/svelte
+      - listitem:
+        - heading "Resources" [level=2]
+        - list:
+          - listitem:
+            - link "Community":
+              - /url: /resources/community
+          - listitem:
+            - link "Help & Support":
+              - /url: https://github.com/shoelace-style/shoelace/discussions
+          - listitem:
+            - link "Accessibility":
+              - /url: /resources/accessibility
+          - listitem:
+            - link "Contributing":
+              - /url: /resources/contributing
+          - listitem:
+            - link "Changelog":
+              - /url: /resources/changelog
+      - listitem:
+        - heading "Components" [level=2]
+        - list:
+          - listitem:
+            - link "Alert":
+              - /url: /components/alert
+          - listitem:
+            - link "Animated Image":
+              - /url: /components/animated-image
+          - listitem:
+            - link "Animation":
+              - /url: /components/animation
+          - listitem:
+            - link "Avatar":
+              - /url: /components/avatar
+          - listitem:
+            - link "Badge":
+              - /url: /components/badge
+          - listitem:
+            - link "Breadcrumb":
+              - /url: /components/breadcrumb
+          - listitem:
+            - link "Breadcrumb Item":
+              - /url: /components/breadcrumb-item
+          - listitem:
+            - link "Button":
+              - /url: /components/button
+          - listitem:
+            - link "Button Group":
+              - /url: /components/button-group
+          - listitem:
+            - link "Card":
+              - /url: /components/card
+          - listitem:
+            - link "Carousel":
+              - /url: /components/carousel
+          - listitem:
+            - link "Carousel Item":
+              - /url: /components/carousel-item
+          - listitem:
+            - link "Checkbox":
+              - /url: /components/checkbox
+          - listitem:
+            - link "Color Picker":
+              - /url: /components/color-picker
+          - listitem:
+            - link "Copy Button":
+              - /url: /components/copy-button
+          - listitem:
+            - link "Details":
+              - /url: /components/details
+          - listitem:
+            - link "Dialog":
+              - /url: /components/dialog
+          - listitem:
+            - link "Divider":
+              - /url: /components/divider
+          - listitem:
+            - link "Drawer":
+              - /url: /components/drawer
+          - listitem:
+            - link "Dropdown":
+              - /url: /components/dropdown
+          - listitem:
+            - link "Format Bytes":
+              - /url: /components/format-bytes
+          - listitem:
+            - link "Format Date":
+              - /url: /components/format-date
+          - listitem:
+            - link "Format Number":
+              - /url: /components/format-number
+          - listitem:
+            - link "Icon":
+              - /url: /components/icon
+          - listitem:
+            - link "Icon Button":
+              - /url: /components/icon-button
+          - listitem:
+            - link "Image Comparer":
+              - /url: /components/image-comparer
+          - listitem:
+            - link "Include":
+              - /url: /components/include
+          - listitem:
+            - link "Input":
+              - /url: /components/input
+          - listitem:
+            - link "Menu":
+              - /url: /components/menu
+          - listitem:
+            - link "Menu Item":
+              - /url: /components/menu-item
+          - listitem:
+            - link "Menu Label":
+              - /url: /components/menu-label
+          - listitem:
+            - link "Mutation Observer":
+              - /url: /components/mutation-observer
+          - listitem:
+            - link "Option":
+              - /url: /components/option
+          - listitem:
+            - link "Popup":
+              - /url: /components/popup
+          - listitem:
+            - link "Progress Bar":
+              - /url: /components/progress-bar
+          - listitem:
+            - link "Progress Ring":
+              - /url: /components/progress-ring
+          - listitem:
+            - link "QR Code":
+              - /url: /components/qr-code
+          - listitem:
+            - link "Radio":
+              - /url: /components/radio
+          - listitem:
+            - link "Radio Button":
+              - /url: /components/radio-button
+          - listitem:
+            - link "Radio Group":
+              - /url: /components/radio-group
+          - listitem:
+            - link "Range":
+              - /url: /components/range
+          - listitem:
+            - link "Rating":
+              - /url: /components/rating
+          - listitem:
+            - link "Relative Time":
+              - /url: /components/relative-time
+          - listitem:
+            - link "Resize Observer":
+              - /url: /components/resize-observer
+          - listitem:
+            - link "Select":
+              - /url: /components/select
+          - listitem:
+            - link "Skeleton":
+              - /url: /components/skeleton
+          - listitem:
+            - link "Spinner":
+              - /url: /components/spinner
+          - listitem:
+            - link "Split Panel":
+              - /url: /components/split-panel
+          - listitem:
+            - link "Switch":
+              - /url: /components/switch
+          - listitem:
+            - link "Tab":
+              - /url: /components/tab
+          - listitem:
+            - link "Tab Group":
+              - /url: /components/tab-group
+          - listitem:
+            - link "Tab Panel":
+              - /url: /components/tab-panel
+          - listitem:
+            - link "Tag":
+              - /url: /components/tag
+          - listitem:
+            - link "Textarea":
+              - /url: /components/textarea
+          - listitem:
+            - link "Tooltip":
+              - /url: /components/tooltip
+          - listitem:
+            - link "Tree":
+              - /url: /components/tree
+          - listitem:
+            - link "Tree Item":
+              - /url: /components/tree-item
+          - listitem:
+            - link "Visually Hidden":
+              - /url: /components/visually-hidden
+      - listitem:
+        - heading "Design Tokens" [level=2]
+        - list:
+          - listitem:
+            - link "Typography":
+              - /url: /tokens/typography
+          - listitem:
+            - link "Color":
+              - /url: /tokens/color
+          - listitem:
+            - link "Spacing":
+              - /url: /tokens/spacing
+          - listitem:
+            - link "Elevation":
+              - /url: /tokens/elevation
+          - listitem:
+            - link "Border Radius":
+              - /url: /tokens/border-radius
+          - listitem:
+            - link "Transition":
+              - /url: /tokens/transition
+          - listitem:
+            - link "Z-index":
+              - /url: /tokens/z-index
+          - listitem:
+            - link "More Tokens":
+              - /url: /tokens/more
+      - listitem:
+        - heading "Tutorials" [level=2]
+        - list:
+          - listitem:
+            - link "Integrating with Astro":
+              - /url: /tutorials/integrating-with-astro
+          - listitem:
+            - link "Integrating with Laravel":
+              - /url: /tutorials/integrating-with-laravel
+          - listitem:
+            - link "Integrating with NextJS":
+              - /url: /tutorials/integrating-with-nextjs
+          - listitem:
+            - link "Integrating with Rails":
+              - /url: /tutorials/integrating-with-rails
+- main:
+  - article:
+    - list:
+      - listitem:
+        - link "Button":
+          - /url: "#"
+      - listitem:
+        - link "Examples":
+          - /url: "#examples"
+      - listitem:
+        - link "Variants":
+          - /url: "#variants"
+      - listitem:
+        - link "Sizes":
+          - /url: "#sizes"
+      - listitem:
+        - link "Outline Buttons":
+          - /url: "#outline-buttons"
+      - listitem:
+        - link "Pill Buttons":
+          - /url: "#pill-buttons"
+      - listitem:
+        - link "Circle Buttons":
+          - /url: "#circle-buttons"
+      - listitem:
+        - link "Text Buttons":
+          - /url: "#text-buttons"
+      - listitem:
+        - link "Link Buttons":
+          - /url: "#link-buttons"
+      - listitem:
+        - link "Setting a Custom Width":
+          - /url: "#setting-a-custom-width"
+      - listitem:
+        - link "Prefix and Suffix Icons":
+          - /url: "#prefix-and-suffix-icons"
+      - listitem:
+        - link "Caret":
+          - /url: "#caret"
+      - listitem:
+        - link "Loading":
+          - /url: "#loading"
+      - listitem:
+        - link "Disabled":
+          - /url: "#disabled"
+      - listitem:
+        - link "Styling Buttons":
+          - /url: "#styling-buttons"
+      - listitem:
+        - link "Importing":
+          - /url: "#importing"
+      - listitem:
+        - link "Slots":
+          - /url: "#slots"
+      - listitem:
+        - link "Properties":
+          - /url: "#properties"
+      - listitem:
+        - link "Events":
+          - /url: "#events"
+      - listitem:
+        - link "Methods":
+          - /url: "#methods"
+      - listitem:
+        - link "Parts":
+          - /url: "#parts"
+      - listitem:
+        - link "Dependencies":
+          - /url: "#dependencies"
+    - heading "Button" [level=1]
+    - code: <sl-button> | SlButton
+    - status: Since 2.0
+    - status: stable
+    - paragraph: Buttons represent actions that are available to the user.
+    - button "Button"
+    - button "Source":
+      - text: Source
+      - img
+    - button "HTML"
+    - button "React"
+    - button "Edit on CodePen":
+      - img
+    - heading "ExamplesDirect link to \"Examples\"" [level=2]:
+      - text: Examples
+      - link "Direct link to \"Examples\"":
+        - /url: "#examples"
+        - text: "#"
+    - heading "VariantsDirect link to \"Variants\"" [level=3]:
+      - text: Variants
+      - link "Direct link to \"Variants\"":
+        - /url: "#variants"
+        - text: "#"
+    - paragraph:
+      - text: Use the
+      - code: variant
+      - text: attribute to set the button’s variant.
+    - button "Default"
+    - button "Primary"
+    - button "Success"
+    - button "Neutral"
+    - button "Warning"
+    - button "Danger"
+    - button "Source":
+      - text: Source
+      - img
+    - button "HTML"
+    - button "React"
+    - button "Edit on CodePen":
+      - img
+    - heading "SizesDirect link to \"Sizes\"" [level=3]:
+      - text: Sizes
+      - link "Direct link to \"Sizes\"":
+        - /url: "#sizes"
+        - text: "#"
+    - paragraph:
+      - text: Use the
+      - code: size
+      - text: attribute to change a button’s size.
+    - button "Small"
+    - button "Medium"
+    - button "Large"
+    - button "Source":
+      - text: Source
+      - img
+    - button "HTML"
+    - button "React"
+    - button "Edit on CodePen":
+      - img
+    - heading "Outline ButtonsDirect link to \"Outline Buttons\"" [level=3]:
+      - text: Outline Buttons
+      - link "Direct link to \"Outline Buttons\"":
+        - /url: "#outline-buttons"
+        - text: "#"
+    - paragraph:
+      - text: Use the
+      - code: outline
+      - text: attribute to draw outlined buttons with transparent backgrounds.
+    - button "Default"
+    - button "Primary"
+    - button "Success"
+    - button "Neutral"
+    - button "Warning"
+    - button "Danger"
+    - button "Source":
+      - text: Source
+      - img
+    - button "HTML"
+    - button "React"
+    - button "Edit on CodePen":
+      - img
+    - heading "Pill ButtonsDirect link to \"Pill Buttons\"" [level=3]:
+      - text: Pill Buttons
+      - link "Direct link to \"Pill Buttons\"":
+        - /url: "#pill-buttons"
+        - text: "#"
+    - paragraph:
+      - text: Use the
+      - code: pill
+      - text: attribute to give buttons rounded edges.
+    - button "Small"
+    - button "Medium"
+    - button "Large"
+    - button "Source":
+      - text: Source
+      - img
+    - button "HTML"
+    - button "React"
+    - button "Edit on CodePen":
+      - img
+    - heading "Circle ButtonsDirect link to \"Circle Buttons\"" [level=3]:
+      - text: Circle Buttons
+      - link "Direct link to \"Circle Buttons\"":
+        - /url: "#circle-buttons"
+        - text: "#"
+    - paragraph:
+      - text: Use the
+      - code: circle
+      - text: attribute to create circular icon buttons. When this attribute is set, the button expects a single
+      - code: <sl-icon>
+      - text: in the default slot.
+    - button "Settings":
+      - img "Settings":
+        - img
+    - button "Settings":
+      - img "Settings":
+        - img
+    - button "Settings":
+      - img "Settings":
+        - img
+    - button "Source":
+      - text: Source
+      - img
+    - button "HTML"
+    - button "React"
+    - button "Edit on CodePen":
+      - img
+    - heading "Text ButtonsDirect link to \"Text Buttons\"" [level=3]:
+      - text: Text Buttons
+      - link "Direct link to \"Text Buttons\"":
+        - /url: "#text-buttons"
+        - text: "#"
+    - paragraph:
+      - text: Use the
+      - code: text
+      - text: variant to create text buttons that share the same size as regular buttons but don’t have backgrounds or borders.
+    - button "Text"
+    - button "Text"
+    - button "Text"
+    - button "Source":
+      - text: Source
+      - img
+    - button "HTML"
+    - button "React"
+    - button "Edit on CodePen":
+      - img
+    - heading "Link ButtonsDirect link to \"Link Buttons\"" [level=3]:
+      - text: Link Buttons
+      - link "Direct link to \"Link Buttons\"":
+        - /url: "#link-buttons"
+        - text: "#"
+    - paragraph:
+      - text: It’s often helpful to have a button that works like a link. This is possible by setting the
+      - code: href
+      - text: attribute, which will make the component render an
+      - code: <a>
+      - text: under the hood. This gives you all the default link behavior the browser provides (e.g. CMD/CTRL/SHIFT + CLICK) and exposes the
+      - code: target
+      - text: and
+      - code: download
+      - text: attributes.
+    - link "Link":
+      - /url: https://example.com/
+    - link "New Window":
+      - /url: https://example.com/
+    - link "Download":
+      - /url: /assets/images/wordmark.svg
+    - text: Disabled
+    - button "Source":
+      - text: Source
+      - img
+    - button "HTML"
+    - button "React"
+    - button "Edit on CodePen":
+      - img
+    - alert:
+      - text: i
+      - paragraph:
+        - text: When a
+        - code: target
+        - text: is set, the link will receive
+        - code: rel="noreferrer noopener"
+        - text: for
+        - link "security reasons":
+          - /url: https://mathiasbynens.github.io/rel-noopener/
+        - text: .
+    - heading "Setting a Custom WidthDirect link to \"Setting a Custom Width\"" [level=3]:
+      - text: Setting a Custom Width
+      - link "Direct link to \"Setting a Custom Width\"":
+        - /url: "#setting-a-custom-width"
+        - text: "#"
+    - paragraph: As expected, buttons can be given a custom width by passing inline styles to the component (or using a class). This is useful for making buttons span the full width of their container on smaller screens.
+    - button "Small"
+    - button "Medium"
+    - button "Large"
+    - button "Source":
+      - text: Source
+      - img
+    - button "HTML"
+    - button "React"
+    - button "Edit on CodePen":
+      - img
+    - heading "Prefix and Suffix IconsDirect link to \"Prefix and Suffix Icons\"" [level=3]:
+      - text: Prefix and Suffix Icons
+      - link "Direct link to \"Prefix and Suffix Icons\"":
+        - /url: "#prefix-and-suffix-icons"
+        - text: "#"
+    - paragraph:
+      - text: Use the
+      - code: prefix
+      - text: and
+      - code: suffix
+      - text: slots to add icons.
+    - button "Settings"
+    - button "Refresh"
+    - button "Open"
+    - button "Settings"
+    - button "Refresh"
+    - button "Open"
+    - button "Settings"
+    - button "Refresh"
+    - button "Open"
+    - button "Source":
+      - text: Source
+      - img
+    - button "HTML"
+    - button "React"
+    - button "Edit on CodePen":
+      - img
+    - heading "CaretDirect link to \"Caret\"" [level=3]:
+      - text: Caret
+      - link "Direct link to \"Caret\"":
+        - /url: "#caret"
+        - text: "#"
+    - paragraph:
+      - text: Use the
+      - code: caret
+      - text: attribute to add a dropdown indicator when a button will trigger a dropdown, menu, or popover.
+    - button "Small"
+    - button "Medium"
+    - button "Large"
+    - button "Source":
+      - text: Source
+      - img
+    - button "HTML"
+    - button "React"
+    - button "Edit on CodePen":
+      - img
+    - heading "LoadingDirect link to \"Loading\"" [level=3]:
+      - text: Loading
+      - link "Direct link to \"Loading\"":
+        - /url: "#loading"
+        - text: "#"
+    - paragraph:
+      - text: Use the
+      - code: loading
+      - text: attribute to make a button busy. The width will remain the same as before, preventing adjacent elements from moving around.
+    - button "Default":
+      - text: Default
+      - progressbar "Loading"
+    - button "Primary":
+      - text: Primary
+      - progressbar "Loading"
+    - button "Success":
+      - text: Success
+      - progressbar "Loading"
+    - button "Neutral":
+      - text: Neutral
+      - progressbar "Loading"
+    - button "Warning":
+      - text: Warning
+      - progressbar "Loading"
+    - button "Danger":
+      - text: Danger
+      - progressbar "Loading"
+    - button "Source":
+      - text: Source
+      - img
+    - button "HTML"
+    - button "React"
+    - button "Edit on CodePen":
+      - img
+    - heading "DisabledDirect link to \"Disabled\"" [level=3]:
+      - text: Disabled
+      - link "Direct link to \"Disabled\"":
+        - /url: "#disabled"
+        - text: "#"
+    - paragraph:
+      - text: Use the
+      - code: disabled
+      - text: attribute to disable a button.
+    - button "Default" [disabled]
+    - button "Primary" [disabled]
+    - button "Success" [disabled]
+    - button "Neutral" [disabled]
+    - button "Warning" [disabled]
+    - button "Danger" [disabled]
+    - button "Source":
+      - text: Source
+      - img
+    - button "HTML"
+    - button "React"
+    - button "Edit on CodePen":
+      - img
+    - heading "Styling ButtonsDirect link to \"Styling Buttons\"" [level=3]:
+      - text: Styling Buttons
+      - link "Direct link to \"Styling Buttons\"":
+        - /url: "#styling-buttons"
+        - text: "#"
+    - paragraph:
+      - text: This example demonstrates how to style buttons using a custom class. This is the recommended approach if you need to add additional variations. To customize an existing variation, modify the selector to target the button’s
+      - code: variant
+      - text: attribute instead of a class (e.g.
+      - code: sl-button[variant="primary"]
+      - text: ).
+    - button "Pink Button"
+    - button "Source":
+      - text: Source
+      - img
+    - button "Edit on CodePen":
+      - img
+    - heading "ImportingDirect link to \"Importing\"" [level=2]:
+      - text: Importing
+      - link "Direct link to \"Importing\"":
+        - /url: "#importing"
+        - text: "#"
+    - paragraph:
+      - text: If you’re using the autoloader or the traditional loader, you can ignore this section. Otherwise, feel free to use any of the following snippets to
+      - link "cherry pick":
+        - /url: /getting-started/installation#cherry-picking
+      - text: this component.
+    - tablist:
+      - tab "Script"
+      - tab "Import"
+      - tab "Bundler"
+      - tab "React"
+    - heading "SlotsDirect link to \"Slots\"" [level=2]:
+      - text: Slots
+      - link "Direct link to \"Slots\"":
+        - /url: "#slots"
+        - text: "#"
+    - table:
+      - rowgroup:
+        - row "Name Description":
+          - cell "Name"
+          - cell "Description"
+      - rowgroup:
+        - row "(default) The button’s label.":
+          - cell "(default)"
+          - cell "The button’s label."
+        - row "prefix A presentational prefix icon or similar element.":
+          - cell "prefix":
+            - code: prefix
+          - cell "A presentational prefix icon or similar element."
+        - row "suffix A presentational suffix icon or similar element.":
+          - cell "suffix":
+            - code: suffix
+          - cell "A presentational suffix icon or similar element."
+    - paragraph:
+      - emphasis:
+        - text: Learn more about
+        - link "using slots":
+          - /url: /getting-started/usage#slots
+        - text: .
+    - heading "PropertiesDirect link to \"Properties\"" [level=2]:
+      - text: Properties
+      - link "Direct link to \"Properties\"":
+        - /url: "#properties"
+        - text: "#"
+    - table:
+      - rowgroup:
+        - row "Name Description Reflects Type Default":
+          - cell "Name"
+          - cell "Description"
+          - cell "Reflects"
+          - cell "Type"
+          - cell "Default"
+      - rowgroup:
+        - row "variant The button’s theme variant. yes 'default' | 'primary' | 'success' | 'neutral' | 'warning' | 'danger' | 'text' 'default'":
+          - cell "variant":
+            - code: variant
+          - cell "The button’s theme variant."
+          - cell "yes":
+            - img "yes":
+              - img
+          - cell "'default' | 'primary' | 'success' | 'neutral' | 'warning' | 'danger' | 'text'":
+            - code: "'default' | 'primary' | 'success' | 'neutral' | 'warning' | 'danger' | 'text'"
+          - cell "'default'":
+            - code: "'default'"
+        - row "size The button’s size. yes 'small' | 'medium' | 'large' 'medium'":
+          - cell "size":
+            - code: size
+          - cell "The button’s size."
+          - cell "yes":
+            - img "yes":
+              - img
+          - cell "'small' | 'medium' | 'large'":
+            - code: "'small' | 'medium' | 'large'"
+          - cell "'medium'":
+            - code: "'medium'"
+        - row "caret Draws the button with a caret. Used to indicate that the button triggers a dropdown menu or similar behavior. yes boolean false":
+          - cell "caret":
+            - code: caret
+          - cell "Draws the button with a caret. Used to indicate that the button triggers a dropdown menu or similar behavior."
+          - cell "yes":
+            - img "yes":
+              - img
+          - cell "boolean":
+            - code: boolean
+          - cell "false":
+            - code: "false"
+        - row "disabled Disables the button. yes boolean false":
+          - cell "disabled":
+            - code: disabled
+          - cell "Disables the button."
+          - cell "yes":
+            - img "yes":
+              - img
+          - cell "boolean":
+            - code: boolean
+          - cell "false":
+            - code: "false"
+        - row "loading Draws the button in a loading state. yes boolean false":
+          - cell "loading":
+            - code: loading
+          - cell "Draws the button in a loading state."
+          - cell "yes":
+            - img "yes":
+              - img
+          - cell "boolean":
+            - code: boolean
+          - cell "false":
+            - code: "false"
+        - row "outline Draws an outlined button. yes boolean false":
+          - cell "outline":
+            - code: outline
+          - cell "Draws an outlined button."
+          - cell "yes":
+            - img "yes":
+              - img
+          - cell "boolean":
+            - code: boolean
+          - cell "false":
+            - code: "false"
+        - row "pill Draws a pill-style button with rounded edges. yes boolean false":
+          - cell "pill":
+            - code: pill
+          - cell "Draws a pill-style button with rounded edges."
+          - cell "yes":
+            - img "yes":
+              - img
+          - cell "boolean":
+            - code: boolean
+          - cell "false":
+            - code: "false"
+        - row "circle Draws a circular icon button. When this attribute is present, the button expects a single <sl-icon> in the default slot. yes boolean false":
+          - cell "circle":
+            - code: circle
+          - cell "Draws a circular icon button. When this attribute is present, the button expects a single <sl-icon> in the default slot.":
+            - text: Draws a circular icon button. When this attribute is present, the button expects a single
+            - code: <sl-icon>
+            - text: in the default slot.
+          - cell "yes":
+            - img "yes":
+              - img
+          - cell "boolean":
+            - code: boolean
+          - cell "false":
+            - code: "false"
+        - row "type The type of button. Note that the default value is button instead of submit, which is opposite of how native <button> elements behave. When the type is submit, the button will submit the surrounding form. 'button' | 'submit' | 'reset' 'button'":
+          - cell "type":
+            - code: type
+          - cell "The type of button. Note that the default value is button instead of submit, which is opposite of how native <button> elements behave. When the type is submit, the button will submit the surrounding form.":
+            - text: The type of button. Note that the default value is
+            - code: button
+            - text: instead of
+            - code: submit
+            - text: ", which is opposite of how native"
+            - code: <button>
+            - text: elements behave. When the type is
+            - code: submit
+            - text: ", the button will submit the surrounding form."
+          - cell
+          - cell "'button' | 'submit' | 'reset'":
+            - code: "'button' | 'submit' | 'reset'"
+          - cell "'button'":
+            - code: "'button'"
+        - row "name The name of the button, submitted as a name/value pair with form data, but only when this button is the submitter. This attribute is ignored when href is present. string ''":
+          - cell "name":
+            - code: name
+          - cell "The name of the button, submitted as a name/value pair with form data, but only when this button is the submitter. This attribute is ignored when href is present.":
+            - text: The name of the button, submitted as a name/value pair with form data, but only when this button is the submitter. This attribute is ignored when
+            - code: href
+            - text: is present.
+          - cell
+          - cell "string":
+            - code: string
+          - cell "''":
+            - code: "''"
+        - row "value The value of the button, submitted as a pair with the button’s name as part of the form data, but only when this button is the submitter. This attribute is ignored when href is present. string ''":
+          - cell "value":
+            - code: value
+          - cell "The value of the button, submitted as a pair with the button’s name as part of the form data, but only when this button is the submitter. This attribute is ignored when href is present.":
+            - text: The value of the button, submitted as a pair with the button’s name as part of the form data, but only when this button is the submitter. This attribute is ignored when
+            - code: href
+            - text: is present.
+          - cell
+          - cell "string":
+            - code: string
+          - cell "''":
+            - code: "''"
+        - row "href When set, the underlying button will be rendered as an <a> with this href instead of a <button>. string ''":
+          - cell "href":
+            - code: href
+          - cell "When set, the underlying button will be rendered as an <a> with this href instead of a <button>.":
+            - text: When set, the underlying button will be rendered as an
+            - code: <a>
+            - text: with this
+            - code: href
+            - text: instead of a
+            - code: <button>
+            - text: .
+          - cell
+          - cell "string":
+            - code: string
+          - cell "''":
+            - code: "''"
+        - row "target Tells the browser where to open the link. Only used when href is present. '_blank' | '_parent' | '_self' | '_top' -":
+          - cell "target":
+            - code: target
+          - cell "Tells the browser where to open the link. Only used when href is present.":
+            - text: Tells the browser where to open the link. Only used when
+            - code: href
+            - text: is present.
+          - cell
+          - cell "'_blank' | '_parent' | '_self' | '_top'":
+            - code: "'_blank' | '_parent' | '_self' | '_top'"
+          - cell "-"
+        - row "rel When using href, this attribute will map to the underlying link’s rel attribute. Unlike regular links, the default is noreferrer noopener to prevent security exploits. However, if you’re using target to point to a specific tab/window, this will prevent that from working correctly. You can remove or change the default value by setting the attribute to an empty string or a value of your choice, respectively. string 'noreferrer noopener'":
+          - cell "rel":
+            - code: rel
+          - cell "When using href, this attribute will map to the underlying link’s rel attribute. Unlike regular links, the default is noreferrer noopener to prevent security exploits. However, if you’re using target to point to a specific tab/window, this will prevent that from working correctly. You can remove or change the default value by setting the attribute to an empty string or a value of your choice, respectively.":
+            - text: When using
+            - code: href
+            - text: ", this attribute will map to the underlying link’s"
+            - code: rel
+            - text: attribute. Unlike regular links, the default is
+            - code: noreferrer noopener
+            - text: to prevent security exploits. However, if you’re using
+            - code: target
+            - text: to point to a specific tab/window, this will prevent that from working correctly. You can remove or change the default value by setting the attribute to an empty string or a value of your choice, respectively.
+          - cell
+          - cell "string":
+            - code: string
+          - cell "'noreferrer noopener'":
+            - code: "'noreferrer noopener'"
+        - row "download Tells the browser to download the linked file as this filename. Only used when href is present. string | undefined -":
+          - cell "download":
+            - code: download
+          - cell "Tells the browser to download the linked file as this filename. Only used when href is present.":
+            - text: Tells the browser to download the linked file as this filename. Only used when
+            - code: href
+            - text: is present.
+          - cell
+          - cell "string | undefined":
+            - code: string | undefined
+          - cell "-"
+        - row "form The “form owner” to associate the button with. If omitted, the closest containing form will be used instead. The value of this attribute must be an id of a form in the same document or shadow root as the button. string -":
+          - cell "form":
+            - code: form
+          - cell "The “form owner” to associate the button with. If omitted, the closest containing form will be used instead. The value of this attribute must be an id of a form in the same document or shadow root as the button."
+          - cell
+          - cell "string":
+            - code: string
+          - cell "-"
+        - row "formAction formaction Used to override the form owner’s action attribute. string -":
+          - cell "formAction formaction":
+            - code: formAction
+            - code: formaction
+          - cell "Used to override the form owner’s action attribute.":
+            - text: Used to override the form owner’s
+            - code: action
+            - text: attribute.
+          - cell
+          - cell "string":
+            - code: string
+          - cell "-"
+        - row "formEnctype formenctype Used to override the form owner’s enctype attribute. 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain' -":
+          - cell "formEnctype formenctype":
+            - code: formEnctype
+            - code: formenctype
+          - cell "Used to override the form owner’s enctype attribute.":
+            - text: Used to override the form owner’s
+            - code: enctype
+            - text: attribute.
+          - cell
+          - cell "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'":
+            - code: "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'"
+          - cell "-"
+        - row "formMethod formmethod Used to override the form owner’s method attribute. 'post' | 'get' -":
+          - cell "formMethod formmethod":
+            - code: formMethod
+            - code: formmethod
+          - cell "Used to override the form owner’s method attribute.":
+            - text: Used to override the form owner’s
+            - code: method
+            - text: attribute.
+          - cell
+          - cell "'post' | 'get'":
+            - code: "'post' | 'get'"
+          - cell "-"
+        - row "formNoValidate formnovalidate Used to override the form owner’s novalidate attribute. boolean -":
+          - cell "formNoValidate formnovalidate":
+            - code: formNoValidate
+            - code: formnovalidate
+          - cell "Used to override the form owner’s novalidate attribute.":
+            - text: Used to override the form owner’s
+            - code: novalidate
+            - text: attribute.
+          - cell
+          - cell "boolean":
+            - code: boolean
+          - cell "-"
+        - row "formTarget formtarget Used to override the form owner’s target attribute. '_self' | '_blank' | '_parent' | '_top' | string -":
+          - cell "formTarget formtarget":
+            - code: formTarget
+            - code: formtarget
+          - cell "Used to override the form owner’s target attribute.":
+            - text: Used to override the form owner’s
+            - code: target
+            - text: attribute.
+          - cell
+          - cell "'_self' | '_blank' | '_parent' | '_top' | string":
+            - code: "'_self' | '_blank' | '_parent' | '_top' | string"
+          - cell "-"
+        - row "validity Gets the validity state object - -":
+          - cell "validity":
+            - code: validity
+          - cell "Gets the validity state object"
+          - cell
+          - cell "-"
+          - cell "-"
+        - row "validationMessage Gets the validation message - -":
+          - cell "validationMessage":
+            - code: validationMessage
+          - cell "Gets the validation message"
+          - cell
+          - cell "-"
+          - cell "-"
+        - row "updateComplete A read-only promise that resolves when the component has finished updating.":
+          - cell "updateComplete":
+            - code: updateComplete
+          - cell "A read-only promise that resolves when the component has finished updating.":
+            - text: A read-only promise that resolves when the component has
+            - link "finished updating":
+              - /url: /getting-started/usage?#component-rendering-and-updating
+            - text: .
+          - cell
+          - cell
+          - cell
+    - paragraph:
+      - emphasis:
+        - text: Learn more about
+        - link "attributes and properties":
+          - /url: /getting-started/usage#attributes-and-properties
+        - text: .
+    - heading "EventsDirect link to \"Events\"" [level=2]:
+      - text: Events
+      - link "Direct link to \"Events\"":
+        - /url: "#events"
+        - text: "#"
+    - table:
+      - rowgroup:
+        - row "Name Description Event Detail":
+          - cell "Name"
+          - cell "Description"
+          - cell "Event Detail"
+      - rowgroup:
+        - row "sl-blur Emitted when the button loses focus. -":
+          - cell "sl-blur":
+            - code: sl-blur
+          - cell "Emitted when the button loses focus."
+          - cell "-"
+        - row "sl-focus Emitted when the button gains focus. -":
+          - cell "sl-focus":
+            - code: sl-focus
+          - cell "Emitted when the button gains focus."
+          - cell "-"
+        - row "sl-invalid Emitted when the form control has been checked for validity and its constraints aren’t satisfied. -":
+          - cell "sl-invalid":
+            - code: sl-invalid
+          - cell "Emitted when the form control has been checked for validity and its constraints aren’t satisfied."
+          - cell "-"
+    - paragraph:
+      - emphasis:
+        - text: Learn more about
+        - link "events":
+          - /url: /getting-started/usage#events
+        - text: .
+    - heading "MethodsDirect link to \"Methods\"" [level=2]:
+      - text: Methods
+      - link "Direct link to \"Methods\"":
+        - /url: "#methods"
+        - text: "#"
+    - table:
+      - rowgroup:
+        - row "Name Description Arguments":
+          - cell "Name"
+          - cell "Description"
+          - cell "Arguments"
+      - rowgroup:
+        - row "click() Simulates a click on the button. -":
+          - cell "click()":
+            - code: click()
+          - cell "Simulates a click on the button."
+          - cell "-"
+        - 'row "focus() Sets focus on the button. options: FocusOptions"':
+          - cell "focus()":
+            - code: focus()
+          - cell "Sets focus on the button."
+          - 'cell "options: FocusOptions"':
+            - code: "options: FocusOptions"
+        - row "blur() Removes focus from the button. -":
+          - cell "blur()":
+            - code: blur()
+          - cell "Removes focus from the button."
+          - cell "-"
+        - row "checkValidity() Checks for validity but does not show a validation message. Returns true when valid and false when invalid. -":
+          - cell "checkValidity()":
+            - code: checkValidity()
+          - cell "Checks for validity but does not show a validation message. Returns true when valid and false when invalid.":
+            - text: Checks for validity but does not show a validation message. Returns
+            - code: "true"
+            - text: when valid and
+            - code: "false"
+            - text: when invalid.
+          - cell "-"
+        - row "getForm() Gets the associated form, if one exists. -":
+          - cell "getForm()":
+            - code: getForm()
+          - cell "Gets the associated form, if one exists."
+          - cell "-"
+        - row "reportValidity() Checks for validity and shows the browser’s validation message if the control is invalid. -":
+          - cell "reportValidity()":
+            - code: reportValidity()
+          - cell "Checks for validity and shows the browser’s validation message if the control is invalid."
+          - cell "-"
+        - 'row "setCustomValidity() Sets a custom validation message. Pass an empty string to restore validity. message: string"':
+          - cell "setCustomValidity()":
+            - code: setCustomValidity()
+          - cell "Sets a custom validation message. Pass an empty string to restore validity."
+          - 'cell "message: string"':
+            - code: "message: string"
+    - paragraph:
+      - emphasis:
+        - text: Learn more about
+        - link "methods":
+          - /url: /getting-started/usage#methods
+        - text: .
+    - heading "PartsDirect link to \"Parts\"" [level=2]:
+      - text: Parts
+      - link "Direct link to \"Parts\"":
+        - /url: "#parts"
+        - text: "#"
+    - table:
+      - rowgroup:
+        - row "Name Description":
+          - cell "Name"
+          - cell "Description"
+      - rowgroup:
+        - row "base The component’s base wrapper.":
+          - cell "base":
+            - code: base
+          - cell "The component’s base wrapper."
+        - row "prefix The container that wraps the prefix.":
+          - cell "prefix":
+            - code: prefix
+          - cell "The container that wraps the prefix."
+        - row "label The button’s label.":
+          - cell "label":
+            - code: label
+          - cell "The button’s label."
+        - row "suffix The container that wraps the suffix.":
+          - cell "suffix":
+            - code: suffix
+          - cell "The container that wraps the suffix."
+        - row "caret The button’s caret icon, an <sl-icon> element.":
+          - cell "caret":
+            - code: caret
+          - cell "The button’s caret icon, an <sl-icon> element.":
+            - text: The button’s caret icon, an
+            - code: <sl-icon>
+            - text: element.
+        - row "spinner The spinner that shows when the button is in the loading state.":
+          - cell "spinner":
+            - code: spinner
+          - cell "The spinner that shows when the button is in the loading state."
+    - paragraph:
+      - emphasis:
+        - text: Learn more about
+        - link "customizing CSS parts":
+          - /url: /getting-started/customizing/#css-parts
+        - text: .
+    - heading "DependenciesDirect link to \"Dependencies\"" [level=2]:
+      - text: Dependencies
+      - link "Direct link to \"Dependencies\"":
+        - /url: "#dependencies"
+        - text: "#"
+    - paragraph: This component automatically imports the following dependencies.
+    - list:
+      - listitem:
+        - code: <sl-icon>
+      - listitem:
+        - code: <sl-spinner>
+```
+
+# Test source
+
+```ts
+   1 | import { Page } from '@playwright/test';
+   2 |
+   3 | export class ShadowDomPage {
+   4 |   constructor(private page: Page) {}
+   5 |
+   6 |   async goto() {
+   7 |     await this.page.goto('https://shoelace.style/components/button/');
+   8 |
+   9 |     // Wait for shadow root to render
+  10 |     await this.page.waitForSelector('sl-button');
+  11 |   }
+  12 |
+  13 |   async clickShadowButton() {
+  14 |     const button = this.page.locator('sl-button');
+  15 |     await button.click();
+  16 |   }
+  17 |
+  18 |   async getShadowButtonText(): Promise<string> {
+  19 |     const button = this.page.locator('sl-button');
+> 20 |     return (await button.textContent())?.trim() || '';
+     |                          ^ Error: locator.textContent: Error: strict mode violation: locator('sl-button') resolved to 61 elements:
+  21 |   }
+  22 | }
+  23 |
+```
