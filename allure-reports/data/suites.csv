@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","11119","Send text in prompt alert","chromium","Fri Apr 25 16:06:58 IST 2025","passed","Fri Apr 25 16:07:09 IST 2025","DemoQA Alerts Handling","alerts.spec.ts","",""
+"","17315","Dismiss confirm alert","chromium","Fri Apr 25 16:06:58 IST 2025","passed","Fri Apr 25 16:07:15 IST 2025","DemoQA Alerts Handling","alerts.spec.ts","",""
+"","31120","Open new tab and verify content","chromium","Fri Apr 25 16:06:58 IST 2025","passed","Fri Apr 25 16:07:29 IST 2025","DemoQA - Browser Windows","browserWindows.spec.ts","",""
+"","26608","Should read text from both iframes","chromium","Fri Apr 25 16:06:58 IST 2025","passed","Fri Apr 25 16:07:25 IST 2025","DemoQA - Iframes","iframes.spec.ts","",""
+"","17290","Accept simple alert","chromium","Fri Apr 25 16:06:58 IST 2025","passed","Fri Apr 25 16:07:15 IST 2025","DemoQA Alerts Handling","alerts.spec.ts","",""

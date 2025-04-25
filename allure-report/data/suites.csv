@@ -1,7 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","12026","Dismiss confirm alert","chromium","Fri Apr 25 13:14:48 IST 2025","passed","Fri Apr 25 13:15:00 IST 2025","DemoQA Alerts Handling","alerts.spec.ts","",""
-"","15914","Send text in prompt alert","chromium","Fri Apr 25 13:14:48 IST 2025","passed","Fri Apr 25 13:15:04 IST 2025","DemoQA Alerts Handling","alerts.spec.ts","",""
-"","11885","Accept simple alert","chromium","Fri Apr 25 13:14:48 IST 2025","passed","Fri Apr 25 13:15:00 IST 2025","DemoQA Alerts Handling","alerts.spec.ts","",""
-"","7753","Open new tab and verify content","chromium","Fri Apr 25 13:18:15 IST 2025","passed","Fri Apr 25 13:18:22 IST 2025","DemoQA - Browser Windows","browserWindows.spec.ts","",""
-"","1971","Should interact with shadow DOM button","chromium","Fri Apr 25 13:29:37 IST 2025","failed","Fri Apr 25 13:29:39 IST 2025","Shadow DOM interaction test","shadowDom.spec.ts","",""
-"","28172","Should read text from both iframes","chromium","Fri Apr 25 13:21:10 IST 2025","passed","Fri Apr 25 13:21:39 IST 2025","DemoQA - Iframes","iframes.spec.ts","",""
