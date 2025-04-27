@@ -1,9 +1,0 @@
-Alert text: You clicked a button
-Promise {
-  <pending>,
-  [Symbol(async_id_symbol)]: 42309,
-  [Symbol(trigger_async_id_symbol)]: 37482,
-  [Symbol(kResourceStore)]: undefined
-}
-Alert text: You clicked a button
-Alert text: You clicked a button

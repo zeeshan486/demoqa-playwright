@@ -1,4 +1,0 @@
-Alert text: You clicked a button
-Alert text: You clicked a button
-undefined
-Alert text: You clicked a button
