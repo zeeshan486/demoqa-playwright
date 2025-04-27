@@ -19,6 +19,7 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries:1,
   timeout:0,
+  snapshotDir: './test-results/snapshots',
   // /* Retry on CI only */
   // retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
@@ -28,18 +29,21 @@ export default defineConfig({
 
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
+    
     baseURL: 'https://demoqa.com',
     headless: false,
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
     trace: 'retain-on-failure',
+    viewport: { width: 1920, height: 911 },
   },
 
   /* Configure projects for major browsers */
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: { ...devices['Desktop Chrome'], viewport: { width: 1920, height: 911 }},
+      
     },
 
     // {
