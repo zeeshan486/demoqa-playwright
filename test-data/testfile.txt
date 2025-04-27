@@ -1,0 +1,3 @@
+This is a sample text file created for testing purposes.
+You can add more content here as needed for your Playwright project.
+Feel free to modify or extend this file.
