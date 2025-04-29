@@ -1,4 +1,5 @@
 import {Locator,Page} from "@playwright/test";
+import { FormData } from "../pages/types";
 
 export class FormPage{
 
@@ -43,33 +44,28 @@ export class FormPage{
         await this.page.goto("/automation-practice-form");
     }
 
-async fillForm(firstName:string,lastName:string,email:string,mobile:string,dob:string,subject:string,path:string,currentAddress:string,state:string,city:string){
+async fillForm(data:FormData){
 
-    await this.firstName.fill(firstName);
-    await this.lastName.fill(lastName);
-    await this.email.fill(email);
-   
-        await this.gender.click();
-    await this.mobile.fill(mobile);
-    await this.dob.fill(dob);
+    await this.firstName.fill(data.firstName);
+    await this.lastName.fill(data.lastName);
+    await this.email.fill(data.email);
+    await this.gender.click();
+    await this.mobile.fill(data.mobile);
+    await this.dob.fill(data.dob);
     await this.dob.press("Enter");
-    await this.subjects.fill(subject);
+    await this.subjects.fill(data.subject);
     await this.subjects.press("Enter");
     await this.hobbies.click();
-    await this.uploadPicture.setInputFiles(path);
-    await this.currentAddress.fill(currentAddress);
+    await this.uploadPicture.setInputFiles(data.path);
+    await this.currentAddress.fill(data.currentAddress);
     await this.state.click();
-    await this.page.getByText(state,{exact:true}).click() ; 
+    await this.page.getByText(data.state,{exact:true}).click() ; 
     await this.city.click();
-    await this.page.getByText(city,{exact:true}).click() ;
+    await this.page.getByText(data.city,{exact:true}).click() ;
     await this.submit.click();
     await this.results.waitFor({state:"visible"});
-    
     const text  = await this.results.textContent();
     return text;
-    
-
-
 
 }
 

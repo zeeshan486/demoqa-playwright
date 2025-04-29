@@ -1,5 +1,19 @@
 import {test,expect} from "@playwright/test";
 import { FormPage } from "../pages/FormPage";
+import { FormData } from "../pages/types";
+
+const formData: FormData = {
+    firstName: "John",
+    lastName: "Doe",
+    email: "email@yopmail.com",
+    mobile: "1234567890",
+    dob: "10/04/2000",
+    subject: "English",
+    path: "./test-data/image.webp",
+    currentAddress: "123 Main St, Cityville",
+    state: "NCR",
+    city: "Delhi",
+  };
 
 test.describe("Form Page", () => {
 
@@ -7,11 +21,7 @@ test.describe("Form Page", () => {
     
         const formPage = new FormPage(page);
         await formPage.goto();
-        const successMessage  = await formPage.fillForm(
-            "John",
-            "Doe",
-            "email@yopmail.com",
-            "1234567890","10/04/2000","English","./test-data/image.webp","123 Main St, Cityville","NCR","Delhi")
+        const successMessage  = await formPage.fillForm(formData)
 
             const modalScreenshot = await formPage.takeModalScreenshot();
 
