@@ -16,7 +16,7 @@ export class AlertsPage {
   }
 
   async open() {
-    await this.page.goto('https://demoqa.com/alerts');
+    await this.page.goto('/alerts');
   }
 
   async triggerAlert() {
